@@ -1,0 +1,25 @@
+<ehcache>
+
+    <diskStore path="user.dir"/>  <!-- current working directory -->
+
+<!--  timeToIdleSeconds - indicates idle time after last usage of object -->
+<!--  timeToLiveSeconds - indicates idle time from creation of object -->
+
+    <defaultCache
+        maxElementsInMemory="1000"
+        eternal="false"
+        timeToIdleSeconds="120"   
+        timeToLiveSeconds="600"
+        overflowToDisk="true"
+        />
+
+
+		<cache 
+			name = "com.excel.cache.Level2Cache.EHCache.StudentBean"
+			maxElementsInMemory = "10000"
+			eternal = "false"
+			timeToIdleSeconds="300"
+			timeToLiveSeconds="600"
+			overflowToDisk="true"/>
+
+</ehcache>

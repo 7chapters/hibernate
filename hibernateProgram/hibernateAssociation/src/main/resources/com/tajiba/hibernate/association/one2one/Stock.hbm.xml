@@ -1,0 +1,24 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+                                   "http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+<hibernate-mapping>
+	<!-- <class catalog="jaydb" -->
+	<class
+		name="com.tajiba.hibernate.association.one2one.stock.Stock" table="stock">
+		<id name="stockId" type="java.lang.Integer">
+			<column name="STOCK_ID" />
+			<generator class="identity" />
+		</id>
+		<property generated="never" lazy="false" name="stockCode"
+			type="string">
+			<column length="10" name="STOCK_CODE" not-null="true" unique="true" />
+		</property>
+		<property generated="never" lazy="false" name="stockName"
+			type="string">
+			<column length="20" name="STOCK_NAME" not-null="true" unique="true" />
+		</property>
+		<one-to-one cascade="save-update"
+			class="com.tajiba.hibernate.association.one2one.stock.StockDetail"
+			name="stockDetail" />
+	</class>
+</hibernate-mapping>
