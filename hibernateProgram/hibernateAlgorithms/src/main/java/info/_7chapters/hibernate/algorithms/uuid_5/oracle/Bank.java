@@ -1,4 +1,4 @@
-package info._7chapters.hibernate.algorithms.native_5.oracle;
+package info._7chapters.hibernate.algorithms.uuid_5.oracle;
 
 public class Bank
 {

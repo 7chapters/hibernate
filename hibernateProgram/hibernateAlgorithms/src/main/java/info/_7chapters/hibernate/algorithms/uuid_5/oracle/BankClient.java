@@ -1,4 +1,4 @@
-package info._7chapters.hibernate.algorithms.native_5.mysql;
+package info._7chapters.hibernate.algorithms.uuid_5.oracle;
 
 // insertion of a record into student table
 
@@ -17,7 +17,7 @@ class BankClient
 
 		//read configuration file
 
-		cfg  = cfg.configure("hibernate.mysql.cfg.xml");
+		cfg  = cfg.configure("hibernate.oracle.cfg.xml");
 
 		// create SessionFactory 
 
@@ -35,12 +35,14 @@ class BankClient
 		String name;
 		
 	
-		name = "HDFC";
-	
-			
-		//b.setAcno("....")
+		name = "SBI";
+		
+
+		//b.setSid(sid);
 		b.setName(name);
 		
+
+
 
 		//creation of Transaction object as we are modifying database table
 

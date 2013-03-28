@@ -1,4 +1,4 @@
-package info._7chapters.hibernate.algorithms.native_5.mysql;
+package info._7chapters.hibernate.algorithms.uuid_5.mysql;
 
 public class Bank
 {

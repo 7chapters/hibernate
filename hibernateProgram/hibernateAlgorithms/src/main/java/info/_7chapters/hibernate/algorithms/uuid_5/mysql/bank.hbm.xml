@@ -5,7 +5,7 @@
 
 <hibernate-mapping>
 
-	<class name="info._7chapters.hibernate.algorithms.native_5.mysql.Bank" table = "bank">
+	<class name="info._7chapters.hibernate.algorithms.uuid_5.mysql.Bank" table = "bank">
 		
 		<id name="acno">
 			<generator class = "uuid"/>
