@@ -1,0 +1,34 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+                                   "http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+<!-- Generated Jan 19, 2010 4:08:57 PM by Hibernate Tools 3.2.5.Beta -->
+<hibernate-mapping>
+	<!-- <class catalog="jaydb" -->
+	<class
+		name="com.tajiba.hibernate.association.one2one.stock.StockDetail"
+		table="stock_detail">
+		<id name="stockId" type="java.lang.Integer">
+			<column name="STOCK_ID" />
+			<generator class="foreign">
+				<param name="property">stock</param>
+			</generator>
+		</id>
+		<one-to-one class="com.tajiba.hibernate.association.one2one.stock.Stock"
+			constrained="true" name="stock" />
+		<property generated="never" lazy="false" name="compName"
+			type="string">
+			<column length="100" name="COMP_NAME" not-null="true" />
+		</property>
+		<property generated="never" lazy="false" name="compDesc"
+			type="string">
+			<column name="COMP_DESC" />
+		</property>
+		<property generated="never" lazy="false" name="remark" type="string">
+			<column name="REMARK" />
+		</property>
+		<property generated="never" lazy="false" name="listedDate"
+			type="date">
+			<column length="10" name="LISTED_DATE" not-null="true" />
+		</property>
+	</class>
+</hibernate-mapping>
