@@ -1,5 +1,0 @@
-<?xml version="1.0"?>
-<ehcache>
-      <defaultCache maxElementsInMemory="100" eternal="false" timeToIdleSeconds="120" timeToLiveSeconds="200" />
-      <cache name="eh.Product" maxElementsInMemory="100" eternal="false" timeToIdleSeconds="5" timeToLiveSeconds="200" />
-</ehcache>
