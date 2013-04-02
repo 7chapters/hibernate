@@ -11,5 +11,4 @@
 	<cache name="info._7chapters.hibernate.cache.level2.eh_cache.StudentBean"
 		maxElementsInMemory="10000" eternal="false" timeToIdleSeconds="300"
 		timeToLiveSeconds="5" overflowToDisk="true" />
-
 </ehcache>
