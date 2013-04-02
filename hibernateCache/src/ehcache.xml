@@ -1,5 +1,15 @@
-<?xml version="1.0"?>
 <ehcache>
-      <defaultCache maxElementsInMemory="100" eternal="false" timeToIdleSeconds="120" timeToLiveSeconds="200" />
-      <cache name="eh.Product" maxElementsInMemory="100" eternal="false" timeToIdleSeconds="5" timeToLiveSeconds="200" />
+
+	<diskStore path="user.dir" />  <!-- current working directory -->
+
+	<!-- timeToIdleSeconds - indicates idle time after last usage of object -->
+	<!-- timeToLiveSeconds - indicates idle time from creation of object -->
+
+	<defaultCache maxElementsInMemory="1000" eternal="false"
+		timeToIdleSeconds="120" timeToLiveSeconds="600" overflowToDisk="true" />
+
+	<cache name="info._7chapters.hibernate.cache.level2.eh_cache.StudentBean"
+		maxElementsInMemory="10000" eternal="false" timeToIdleSeconds="300"
+		timeToLiveSeconds="5" overflowToDisk="true" />
+
 </ehcache>

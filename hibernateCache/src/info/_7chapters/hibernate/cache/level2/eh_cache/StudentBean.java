@@ -1,4 +1,4 @@
-package os;
+package info._7chapters.hibernate.cache.level2.eh_cache;
 
 public class StudentBean
 {

@@ -4,15 +4,10 @@
 	"http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
 
 <hibernate-mapping>
-
-	<class name="os.StudentBean" table="student">
-		<cache usage="read-only" />
-		<id name="sid" column="sid" />
-
-		<property name="sname" column="sname" />
-
-		<property name="tot_m" column="tot_m" />
-
+	<class name="info._7chapters.hibernate.cache.level1.StudentBean" table="student">
+		<id name="sid" column = "sid"/>
+		<property name="sname" 
+				column="sname"/>
+		<property name="tot_m" column = "tot_m"/>
 	</class>
-
 </hibernate-mapping>
