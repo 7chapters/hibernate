@@ -6,6 +6,7 @@
 <hibernate-mapping>
 	<class name="info._7chapters.hibernate.algorithms.increment_oracle_3.StudentBean" table="student">
 		<id name="sid">
+		<!--It is supported by all database-->
 			<generator class = "increment"/>
 		</id>
 		<property name="sname"/>
