@@ -44,6 +44,9 @@ public class EmpCertClient {
 		EmpCertClient ec = new EmpCertClient();
 
 		ec.addEmployee("Jayram", "Rout", 5000, set1);
+//		ec.listEmployees();
+//		ec.updateEmployee(1, 3456);
+//		ec.deleteEmployee(1);
 
 	}
 	public Integer addEmployee(String fname, String lname, int salary, Set cert){ 
