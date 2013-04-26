@@ -15,19 +15,19 @@
 		<!-- This is in case of LIST -->
 		<!-- <list name="certificates" cascade="all">
 			<key column="employee_id" />
-			<list-index column="idx" />
-			<one-to-many class="Certificate" />
+			<list-index column="id" />
+			<one-to-many class="info._7chapters.hibernate.mappings.collections_mysql_2.set.Certificate" />
 		</list> -->
 		<!-- This is in case of BAG -->
 		<!-- <bag name="certificates" cascade="all">
-	<key column="employee_id" />
-	<one-to-many class="Certificate" />
-</bag> -->
+			<key column="employee_id" />
+			<one-to-many class="info._7chapters.hibernate.mappings.collections_mysql_2.set.Certificate" />
+		</bag> -->
 <!-- This is for Map -->
 <!-- <map name="certificates" cascade="all">
 	<key column="employee_id" />
 	<index column="certificate_type" type="string" />
-	<one-to-many class="Certificate" />
+	<one-to-many class="info._7chapters.hibernate.mappings.collections_mysql_2.set.Certificate" />
 </map>
  -->		
 		<property name="firstName" column="first_name" type="string" />
