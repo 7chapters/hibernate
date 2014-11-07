@@ -16,11 +16,16 @@
 			<artifactId>slf4j-log4j12</artifactId>
 			<version>1.5.6</version>
 		</dependency>
+		<dependency>
+			<groupId>commons-logging</groupId>
+			<artifactId>commons-logging</artifactId>
+			<version>1.1.1</version>
+		</dependency>
 
 		<dependency>
 			<groupId>com.oracle</groupId>
-			<artifactId>ojdbc14</artifactId>
-			<version>10.2.0.3.0</version>
+			<artifactId>ojdbc6</artifactId>
+			<version>12.1.0.2</version>
 		</dependency>
 		<dependency>
 			<groupId>junit</groupId>
@@ -55,4 +60,11 @@
 			<version>3.6.10.Final</version>
 		</dependency>
 	</dependencies>
+
+	<repositories>
+		<repository>
+			<id>codelds</id>
+			<url>https://code.lds.org/nexus/content/groups/main-repo</url>
+		</repository>
+	</repositories>
 </project>

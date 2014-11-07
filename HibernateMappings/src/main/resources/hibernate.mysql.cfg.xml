@@ -13,12 +13,12 @@
 		<property name="show_sql">true</property>
 		<property name="hibernate.default_catalog">jaydb</property>
 		
-        <!-- <mapping resource="info/_7chapters/hibernate/mappings/collections_mysql_2/set/Set_EmpCertificate.hbm.xml"/> -->
-        <!-- <mapping resource="info/_7chapters/hibernate/mappings/collections_mysql_2/sortedset/SortedSet_EmpCert.hbm.xml"/> -->
-        <!-- <mapping resource="info/_7chapters/hibernate/mappings/association/many2one/many2one.hbm.xml"/> -->
-        <!-- <mapping resource="info/_7chapters/hibernate/mappings/association/one2one/one2one.hbm.xml"/> -->
-        <!-- <mapping resource="info/_7chapters/hibernate/mappings/association/one2many/one2many.hbm.xml"/> -->
-        <mapping resource="info/_7chapters/hibernate/mappings/association/many2many/many2many.hbm.xml"/>
+        <!-- <mapping resource="com/tutorial/hibernate/mappings/collections_mysql_2/set/Set_EmpCertificate.hbm.xml"/> -->
+        <!-- <mapping resource="com/tutorial/hibernate/mappings/collections_mysql_2/sortedset/SortedSet_EmpCert.hbm.xml"/> -->
+        <!-- <mapping resource="com/tutorial/hibernate/mappings/association/many2one/many2one.hbm.xml"/> -->
+        <!-- <mapping resource="com/tutorial/hibernate/mappings/association/one2one/one2one.hbm.xml"/> -->
+        <!-- <mapping resource="com/tutorial/hibernate/mappings/association/one2many/one2many.hbm.xml"/> -->
+        <mapping resource="com/tutorial/hibernate/mappings/association/many2many/many2many.hbm.xml"/>
         
 	</session-factory>
 </hibernate-configuration>

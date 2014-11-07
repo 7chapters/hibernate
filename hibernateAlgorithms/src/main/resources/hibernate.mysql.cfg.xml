@@ -13,9 +13,9 @@
 		<property name="show_sql">true</property>
 		<property name="hibernate.default_catalog">jaydb</property>
 		
-        <!-- <mapping resource="info/_7chapters/hibernate/algorithms/identity_mysql_1/student.hbm.xml"/> -->
-        <!-- <mapping resource="info/_7chapters/hibernate/algorithms/native_4/mysql/student.hbm.xml"/> -->
-        <mapping resource="info/_7chapters/hibernate/algorithms/uuid_5/mysql/bank.hbm.xml"/>
+        <!-- <mapping resource="com/tutorial/hibernate/algorithms/identity_mysql_1/student.hbm.xml"/> -->
+        <!-- <mapping resource="com/tutorial/hibernate/algorithms/native_4/mysql/student.hbm.xml"/> -->
+        <mapping resource="com/tutorial/hibernate/algorithms/uuid_5/mysql/bank.hbm.xml"/>
         
 	</session-factory>
 </hibernate-configuration>
